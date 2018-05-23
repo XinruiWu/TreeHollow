@@ -61,7 +61,7 @@ export class ChatFrameComponent implements OnInit {
     this.enableShow = false;
     this.enableNotify = false;
     this.messageQueue = new Array<object>();
-    this.webSocket$ = WebSocketSubject.create('wss://treehollow.app:8998');
+    this.webSocket$ = WebSocketSubject.create('ws://localhost:8999');
     this.webSocket$.subscribe(
       (message) => {
         for (let i = 0; i < message.length; i++) {

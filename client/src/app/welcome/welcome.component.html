@@ -1,0 +1,23 @@
+<div mdbModal #basicModal="mdb-modal" class="modal fade black" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{ignoreBackdropClick: true, show: true, keyboard: false}">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <div class="modal-content">
+
+      <div class="modal-header grey darken-3 white-text">
+        <h4 class="title"> 树洞 TreeHollow </h4>
+      </div>
+
+      <div class="md-form input-group">
+
+        <div><h1><i class="fa fa-user-circle" style="margin-left: 10px"></i></h1></div>
+        <input style="margin-bottom: 8px" type="text" name="name" [(ngModel)]="this.name" id="name" class="form-control" placeholder="二狗">
+
+        <div class="input-group-btn">
+          <button id="nameBt" style="margin-right: 8px" [disabled]="this.nameValidate()" class="btn waves-light grey darken-3" type="button" mdbWavesEffect (click)="this.setName(); basicModal.hide()"><i class="fa fa-chevron-right mr-1"></i></button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo grey darken-3 sticky-top">
+
+  <!-- Navbar brand -->
+  <logo><a class="navbar-brand" href="">树洞 TreeHollow</a></logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto" id="navBar">
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" (click)="frame.show()" mdbWavesEffect>故事 Story</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" (click)="addContent()" mdbWavesEffect>作者 Author
+          <a class="nav-link waves-light fa fa-lg fa-linkedin-square ml-2 mt-1" mdbWavesEffect id="Lki" style="display: none" href="https://www.linkedin.com/in/xinrui-wu-23a246b7/" target="_blank"></a>
+          <a class="nav-link waves-light fa fa-lg fa-github ml-2 mt-1" mdbWavesEffect id="Git" style="display: none" href="https://www.github.com/xinruiwu" target="_blank"></a>
+          <a class="nav-link waves-light fa fa-lg fa-instagram ml-2 mt-1" mdbWavesEffect id="Ins" style="display: none" href="https://www.instagram.com/xinrui_wu/" target="_blank"></a>
+          <a class="nav-link waves-light fa fa-lg fa-facebook-square ml-2 mt-1" mdbWavesEffect id="Fb" style="display: none" href="https://www.facebook.com/XinruiWu89" target="_blank"></a>
+        </a>
+      </li>
+
+    </ul>
+
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<div mdbModal #frame="mdb-modal" class="modal fade" style="background-color: rgba(0,0,0,0.6)" id="frameModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" escape="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header grey darken-3 white-text">
+        <button type="button" class="close pull-right white-text" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">故事 Story</h4>
+      </div>
+      <div class="modal-body" style="max-height: 80vh; overflow: scroll">
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">留学生活中遇到各种小挫折中挫折大挫折的时候又不想变成一个负能量爆棚的胖子所以尽量独自消化但有时吃太多消化不良总得找个地方一吐为快于是这个页面诞生了。</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">但是希望这里是个分享喜悦的地方。</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">有 @ 功能请自行探索以后有空会加其他feature（别忘了在每一个被@的名字后加个空格）。</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2"></p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">“当我高举理想的火炬 天空却刚好下起了大雨</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">当我不再年少和轻狂 是否还拥有追梦的勇气”</p>
+        </div>
+        <div class="row px-4 justify-content-end">
+          <a class="pt-1 pr-2 text-justify" href="https://www.xiami.com/song/1775651138" target="_blank">——夏小虎<i>《人生》</i></a>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2"></p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2"></p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">Get an avatar then post anything you'd like to share, probably bitterness though we hope it has always been joyful.</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">Don't forget to play with the feature <i>@</i> (please append a whitespace to the end of each name), but remember the identity is only defined by names, and all posts are visible publicly.</p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify">"I like to think that one day you'll be an old man like me talkin' a young man's ear off explainin' to him how you took the sourest lemon that life has to offer and turned it into something resembling lemonade. If you can do that, then maybe you will still be taking three babies home from this hospital, just maybe not the way you planned."</p>
+        </div>
+        <div class="row px-4 justify-content-end">
+          <a class="pt-1 pr-2 text-justify" href="https://en.wikipedia.org/wiki/This_Is_Us_(TV_series)" target="_blank">--Dr. K <i>This is us</i></a>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2"></p>
+        </div>
+        <div class="row px-4">
+          <p class="pt-1 pr-2 text-justify"><small>*求工作，吃苦耐劳 Seeking Software Engineer opportunity<a class="waves-light fa fa-lg fa-linkedin-square ml-2" mdbWavesEffect href="https://www.linkedin.com/in/xinrui-wu-23a246b7/" target="_blank"></a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

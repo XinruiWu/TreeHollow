@@ -1,0 +1,21 @@
+<div class="container-fluid" style="min-height: 94vh; background-image: url(../../assets/bg.JPG); background-repeat: repeat-y; background-size: cover; background-position: center">
+
+  <div class="row">
+    <div class="col container p-0 contentPad ml-3 mr-2 mt-3 mb-3" style="min-width: 0px">
+      <div id="gnrlMsgWd" class="m-1 mt-2 mb-2" style="height: 70vh; overflow:scroll; padding: 20px"></div>
+    </div>
+    <div class="col container p-0 contentPad ml-2 mr-3 mt-3 mb-3" style="min-width: 0px">
+      <div id="tgtMsgWd" class="m-1 mt-2 mb-2" style="height: 70vh; overflow:scroll; padding: 20px"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <textarea placeholder="<ctrl + enter> to send" style="overflow: scroll; background-color: rgba(255,255,255,0.80)" [(ngModel)]="this.message" type="text" class="col md-textarea form-control ml-3 mr-3 mb-1 contentPad text-dark" id="msgInptWd"></textarea>
+  </div>
+
+  <div class="row justify-content-end">
+    <button id="smtBt" [disabled]="this.enableSendValidate()" (click)="this.send(); message = ''" class="btn waves-light grey darken-1 mt-1 mb-5" style="text-transform: none" mdbWavesEffect></button>
+  </div>
+
+</div>
+<app-welcome (nameSetter)="setName($event)"></app-welcome>

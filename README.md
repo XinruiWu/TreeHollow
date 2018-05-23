@@ -16,7 +16,3 @@ Go to `./client/` and run `ng s` for a dev server. Navigate to `http://localhost
 Go to `./server/` and run `tsc` to build the server. The build artifacts will be stored in the `./server/dist/` directory
 
 Go to `./client/` and run `ng build` to build the client. The build artifacts will be stored in the `./client/dist/` directory. Use the `-prod` flag for a production build.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

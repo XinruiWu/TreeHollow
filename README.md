@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Make sure MongoDB is listening on port 27017
+Make sure MongoDB is listening on port `27017`
 
 Go to `./server/` and run `npm start`
 
